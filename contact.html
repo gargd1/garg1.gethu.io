@@ -1,0 +1,135 @@
+<!---
+name deepanshu garg
+date 10/8/2023
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Contact Us</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/logo.png" sizes="128x128">
+  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
+  <script src="assets/validation.js"></script>
+</head>
+
+<body>
+  <header id="header">
+    <div class="container">
+      <figure id="logo">
+        <a href="index.html">
+          <img src="images/logo.png" alt="ABC Computer Services">
+        </a>
+        <figcaption>ABC Computer Services</figcaption>
+      </figure>
+      <div class="header-right">
+        <ul class="social-links">
+          <li>
+            <a href="tel:9988776655"><i class="fas fa-phone"></i> (998) 877-6655</a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook"><i
+                class="fab fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/" target="_blank" aria-label="Linkedin"><i
+                class="fab fa-linkedin"></i></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram"><i
+                class="fab fa-instagram"></i></a>
+          </li>
+        </ul>
+        <nav id="navigation">
+          <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main id="content">
+    <section id="page-header">
+      <div class="container">
+        <h1>Contact Us</h1>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-50">
+            <h2 class="text-strong">Write us here, If you have any questions.</h2>
+            <form id="contactForm" action="index.html" onsubmit="return validateForm()">
+              <div class="field-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                <p id="name-error" class="field-error hidden">Please enter a name</p>
+              </div>
+              <div class="field-group">
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone">
+                <p id="phone-error" class="field-error hidden">Please enter a valid 10 digit number</p>
+              </div>
+              <div class="field-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <p id="email-error" class="field-error hidden">Please enter a valid email address</p>
+              </div>
+              <div class="field-group">
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments" rows="4"></textarea>
+                <p id="comments-error" class="field-error hidden">Please enter comments</p>
+              </div>
+              <div class="field-group">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+              </div>
+            </form>
+          </div>
+          <div class="col-50 contact-details">
+            <address><i class="fas fa-map-marker-alt"></i> 127 West 30th Street 9th Floor <br > &nbsp; &nbsp; &nbsp;
+              New
+              York, NY 10001</address>
+            <p>
+              <a href="tel:9988776655" target="_blank"><i class="fas fa-phone"></i> (998) 877-6655</a> <br >
+              <a href="mailto:admin@domain.tld" target="_blank"><i class="fas fa-envelope"></i> admin@domain.tld</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer">
+    <div class="container">
+      <div id="navbar-footer">
+        <ul class="nav text-center">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <ul class="social-links-footer">
+        <li>
+          <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/" target="_blank" aria-label="Linkedin"><i class="fab fa-linkedin"></i></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram"><i
+              class="fab fa-instagram"></i></a>
+        </li>
+      </ul>
+      <p class="text-center copyright">&copy; 2023 ABC Computer Services. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,571 @@
+/*
+name deepanshu garg
+date 10/8/2023
+description This CSS stylesheet defines the visual style and layout for a modern webpage. 
+It ensures a clean, responsive design, adjusting elements for different screen sizes. The typography, spacing, and color scheme contribute to an appealing and user-friendly interface.
+Key features include a distinctive header, organized navigation, intuitive forms, and stylish social media integration. 
+The layout adapts seamlessly from larger screens to mobile devices, delivering a consistent and engaging user experience.
+*/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.3;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+p {
+  margin-top: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.nav {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav li {
+  display: inline-block;
+}
+
+.nav a {
+  text-decoration: none;
+  padding: 0 10px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.col-50 {
+  flex-basis: 48%;
+  width: 48%;
+  box-sizing: border-box;
+}
+
+/* Header and Navigation */
+#header {
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+  background-color: #f7f7f7;
+}
+
+#header .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+#logo img {
+  height: auto;
+  display: block;
+  width: 80px;
+}
+
+#logo figcaption {
+  margin-left: 15px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #812b8c;
+  max-width: 220px;
+  line-height: normal;
+}
+
+.social-links {
+  list-style-type: none;
+  text-align: right;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.social-links li {
+  display: inline-block;
+}
+
+.social-links a {
+  padding: 3px 6px;
+}
+
+.social-links li:first-child {
+  margin-right: 25px;
+}
+
+.social-links i {
+  color: #812b8c;
+  font-size: 24px;
+  vertical-align: middle;
+}
+
+.social-links li:first-child i {
+  font-size: 20px;
+}
+
+#navigation {
+  text-align: right;
+}
+
+
+#navigation a {
+  color: #333;
+  padding: 0 15px;
+  text-transform: uppercase;
+}
+
+#navigation a:hover,
+#navigation a:focus {
+  color: #812b8c;
+}
+
+/* Content */
+#content {
+  min-height: 300px;
+}
+
+#content section:not(:first-child) {
+  padding: 35px 0;
+}
+
+.home .section-2 {
+  background-color: #f1f1f1;
+}
+
+#page-banner {
+  background: url(images/banner.jpg) center;
+  background-size: cover;
+  overflow: hidden;
+  padding: 80px 0 100px 0;
+  color: #fff;
+  position: relative;
+  text-align: center;
+}
+
+#page-header {
+  background: url(images/header-bg.jpg) center;
+  background-size: cover;
+  overflow: hidden;
+  padding: 25px 0;
+  color: #fff;
+  position: relative;
+}
+
+#page-banner::before {
+  content: "";
+  background-color: rgb(129 43 140 / 80%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+#page-header::before {
+  content: "";
+  background-color: rgb(129 43 140 / 80%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+#page-banner .container {
+  position: relative;
+  z-index: 2;
+}
+
+#page-header .container {
+  position: relative;
+  z-index: 2;
+}
+
+#page-banner h1 {
+  font-size: 40px;
+}
+
+#page-banner p {
+  font-size: 18px;
+  text-align: center;
+  max-width: 900px;
+  margin: auto;
+}
+
+#contactForm {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.contact-details {
+  margin-top: 25px;
+  margin-bottom: 20px;
+  line-height: 2.5;
+  font-size: 20px;
+}
+
+.contact-details i {
+  color: #812b8c;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.contact-details address {
+  max-width: 320px;
+  line-height: 1.4;
+}
+
+.contact-details a:hover,
+.contact-details a:focus {
+  color: #812b8c;
+}
+
+.our-clients {
+  background: #f1f1f1;
+  padding: 10px 0 30px 0;
+}
+
+.our-clients h3 {
+  font-size: 24px;
+}
+
+.carousel {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.carousel figure {
+  margin: 10px;
+  width: 190px;
+  flex: 0 0 190px;
+  text-align: center;
+}
+
+.what-we-do-list {
+  padding-left: 30px;
+  font-size: 20px;
+  line-height: 1.6;
+  list-style-type: disclosure-closed;
+}
+
+.services .text-column h2 {
+  margin-top: 0;
+}
+
+.text-column ul {
+  padding-left: 25px;
+}
+
+.text-strong {
+  font-size: 18px;
+  margin: 0;
+  line-height: normal;
+}
+
+/* Footer */
+#footer {
+  padding: 15px 0;
+  border-top: 1px solid #e0e0e0;
+  background-color: #f7f7f7;
+}
+
+#navbar-footer li+li {
+  border-left: 1px solid #ddd;
+}
+
+#navbar-footer a {
+  color: #812b8c;
+}
+
+#navbar-footer a:hover,
+#navbar-footer a:focus {
+  color: #333;
+}
+
+.social-links-footer {
+  list-style: none;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin: 5px 0;
+}
+
+.social-links-footer a {
+  padding: 10px;
+  display: inline-block;
+  font-size: 28px;
+  color: #812b8c;
+}
+
+.social-links-footer a:hover {
+  color: #333;
+}
+
+/* Form styles */
+.field-group {
+  margin-bottom: 15px;
+}
+
+.field-group label {
+  min-width: 150px;
+  display: inline-block;
+  font-weight: bold;
+  vertical-align: top;
+}
+
+.field-group input[type="text"],
+.field-group input[type="email"],
+.field-group input[type="tel"] {
+  padding: 5px 10px;
+  min-width: 200px;
+}
+
+.field-group textarea {
+  min-width: 200px;
+  padding: 5px 10px;
+}
+
+.field-group input[type="text"]:focus,
+.field-group input[type="email"]:focus,
+.field-group input[type="tel"]:focus,
+.field-group textarea:focus {
+  background-color: #e9e9e9;
+  outline-color: #812b8c;
+}
+
+#contactForm button {
+  padding: 7px 15px;
+  text-transform: uppercase;
+  background: #812b8c;
+  color: #fff;
+  border-color: #812b8c;
+  cursor: pointer;
+}
+
+#contactForm button:hover {
+  background: #fff;
+  color: #812b8c;
+  border-color: #812b8c;
+}
+
+
+.field-error {
+  color: #cd0000;
+  font-size: 13px;
+  line-height: normal;
+  margin-left: 155px;
+}
+
+/* Responsive styles using media queries */
+@media (max-width: 767px) {
+  .col-50 {
+    flex-basis: 100%;
+    width: 100%;
+  }
+
+  #logo {
+    margin-bottom: 10px;
+    justify-content: end;
+  }
+
+  #logo a {
+    flex: 0 0 60px;
+  }
+
+  #logo figcaption {
+    font-size: 24px;
+    max-width: 190px;
+  }
+
+  .social-links {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .social-links li:first-child {
+    margin-right: 10px;
+  }
+
+  .social-links a {
+    padding: 0px 4px;
+    display: inline-block;
+  }
+
+  #navigation {
+    text-align: center;
+  }
+
+  #navigation a {
+    padding: 0px 8px;
+  }
+
+  #page-header h1 {
+    margin: 0;
+  }
+
+  .contact-details {
+    line-height: 2;
+    font-size: 18px;
+    margin-bottom: 0;
+  }
+
+  .text-column h2,
+  .text-column h3 {
+    margin-bottom: 5px;
+  }
+
+  #content section:not(:first-child) {
+    padding: 20px 0;
+  }
+
+  #page-banner h1 {
+    font-size: 32px;
+    margin: 0;
+  }
+
+  #page-banner p {
+    font-size: 16px;
+  }
+
+  #page-banner {
+    padding: 40px 0 50px 0;
+  }
+
+  .what-we-do-list {
+    padding-left: 25px;
+    font-size: 16px;
+  }
+
+  .social-links-footer a {
+    padding: 1px 10px;
+    font-size: 24px;
+    ;
+  }
+
+  #footer {
+    padding: 10px 0;
+    font-size: 14px;
+  }
+
+  .text-center.copyright {
+    margin-bottom: 0;
+  }
+
+  #contactForm {
+    max-width: 360px;
+  }
+
+  .field-error {
+    margin-left: 0;
+  }
+
+  .field-group input[type="text"],
+  .field-group input[type="email"],
+  .field-group input[type="tel"],
+  .field-group textarea {
+    min-width: 250px;
+  }
+
+  .container {
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  #header .container {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel figure {
+    margin: 10px;
+    width: 170px;
+    flex: 0 0 120px;
+  }
+}
+
+@media (min-width: 768px) {
+  #navigation .nav>li:last-child a {
+    padding-right: 0;
+  }
+
+  .what-we-do-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .what-we-do-list li {
+    width: 45%;
+  }
+
+  .md-col-reverse {
+    flex-direction: row-reverse;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .text-column h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .text-column h3 {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .home section .text-column {
+    padding: 30px;
+    font-size: 18px;
+  }
+
+  .services section .text-column {
+    font-size: 18px;
+  }
+}
